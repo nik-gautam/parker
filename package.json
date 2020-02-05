@@ -1,0 +1,25 @@
+{
+  "name": "parker_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node build/index.js",
+    "dev": "nodemon",
+    "build": "rimraf ./build && tsc"
+  },
+  "author": "nik-gautam",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.7.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "rimraf": "^3.0.1"
+  },
+  "dependencies": {
+    "@types/morgan": "^1.7.37",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
