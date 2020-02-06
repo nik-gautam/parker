@@ -12,14 +12,16 @@
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.2",
+    "@types/mongoose": "^5.7.0",
     "@types/node": "^13.7.0",
+    "@types/morgan": "^1.7.37",
+    "rimraf": "^3.0.1",
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.5",
-    "rimraf": "^3.0.1"
+    "typescript": "^3.7.5"
   },
   "dependencies": {
-    "@types/morgan": "^1.7.37",
     "express": "^4.17.1",
+    "mongoose": "^5.8.11",
     "morgan": "^1.9.1"
   }
 }
