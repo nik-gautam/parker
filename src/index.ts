@@ -10,6 +10,10 @@ import parkingRouter from './routes/parking';
 const app: Application = express();
 
 app.use(morgan('dev'));
+app.use(express.json());
+app.use(express.urlencoded({
+    extended: false
+}));
 
 app.use("/users", userRouter);
 app.use("/park", parkingRouter);

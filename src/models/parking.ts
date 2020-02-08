@@ -35,6 +35,10 @@ const parkingSchema = new mongoose.Schema({
                 depart: {
                     type: String,
                     required: true
+                }, 
+                datetime: {
+                    type: String,
+                    required: true
                 }
             }
         ]
@@ -43,3 +47,11 @@ const parkingSchema = new mongoose.Schema({
 
 const Parking = mongoose.model('Parking', parkingSchema);
 export default Parking;
+
+// if(parking[i].length == 0)
+// else {
+//    7 -> all full
+// if(person_after == null)-> 
+//  user_arr > depart->person_before && user_dapart < arrival->person_after
+//}
+// Parking.find({parking_name: name})
